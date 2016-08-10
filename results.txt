@@ -1,0 +1,20 @@
+Dirt Wolf,Victory
+Grapefruit Shandy,Leinenkugel
+Little Sumpin' Sumpin',Lagunitas Brewing Company
+Vienna Lager,Double Nickel 
+Perpetual IPA,Tröegs Brewing Company
+#9,Magic Hat Brewing Company
+Hoppy Blonde,New Belgium Brewing
+Smoked Porter,Captain Lawrence
+Daylight Savings IPA,Flying Fish Brewing Company
+Saison, Yards Brewing Company
+Fresh Slice,Otter Creek Brewing
+Allagash White,Allagash Brewing Company
+Stella Artois,Broouwerj Artois
+Blue Moon,Blue Moon Brewing Company
+Guinness Extra Stout,Guinness
+Yuengling Traditional Lager,Yuengling Brewery
+Smith &amp; Forge,Coors Brewing Company
+Bud Light,Anheuser-Busch InBev
+Miller Lite,Miller Brewing Company
+Coors Light,Coors Brewing Company
