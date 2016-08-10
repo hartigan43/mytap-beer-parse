@@ -1,27 +1,34 @@
 var casper = require('casper').create();
-var beers;
+var beersJSON = {
+  beers : []
+};
 
 //scrape the beers from mytap to
 function getBeers() {
-  var beers = document.querySelectorAll('.list-group-item'), name, brewery;
+  var beers = document.querySelectorAll('.list-group-item');
   return Array.prototype.map.call(beers, function (e) {
      name = e.children[0].children[0].children[0].innerHTML, //name
      brewery = e.children[1].children[0].children[0].children[0].innerHTML; //brewery
-    return [name,brewery];
+     return [name,brewery];
   });
 }
 
-casper.start('http://mytap.beer/places/pbs');
+casper.start('https://mytap.beer/places/pbs');
 
 casper.then(function() {
   beers = this.evaluate(getBeers);
+  for (var i in beers) { 
+    name = beers[i][0];
+    brewery = beers[i][1];
+    beersJSON.beers.push({
+      "name"    : name,
+      "brewery" : brewery
+    });
+  }
 });
 
 casper.run(function() {
-//  for(var i in beers) {
-//    console.log(beers[i]);
-//  }
-  console.log(JSON.stringify(beers));
+  console.log(JSON.stringify(beersJSON));
   casper.done();
 });
 
