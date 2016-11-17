@@ -7,8 +7,8 @@ var beersJSON = {
 function getBeers() {
   var beers = document.querySelectorAll('.list-group-item');
   return Array.prototype.map.call(beers, function (e) {
-     name = e.children[0].children[0].children[0].innerHTML, //name
-     brewery = e.children[1].children[0].children[0].children[0].innerHTML; //brewery
+     name = e.children[0].children[0].children[0].innerHTML,
+     brewery = e.children[1].children[0].children[0].children[0].innerHTML;
      return [name,brewery];
   });
 }
