@@ -31,5 +31,3 @@ casper.run(function() {
   console.log(JSON.stringify(beersJSON));
   casper.done();
 });
-
-//save with cron most likely using the casper output
