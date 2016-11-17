@@ -1,6 +1,6 @@
 var casper = require('casper').create();
 var beersJSON = {
-  beers : []
+  beers: []
 };
 
 //scrape the beers from mytap to
